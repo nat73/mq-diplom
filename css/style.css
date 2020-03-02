@@ -1,0 +1,131 @@
+* {
+ /* margin: 0;
+  padding: 0;*/
+
+  text-decoration: none;
+  font-family: Sans Open, sans-serif;
+  -moz-apperance: none;
+  -webkit-apperance: none;
+}
+
+@font-face {
+	font-family: Open Sans Bold;
+	src: url("../fonts/OpenSans-Bold.ttf"), url("../fonts/OpenSans-Bold.woff"), url("../fonts/OpenSans-Bold.woff2");	
+}
+
+@font-face {
+	font-family: Open Sans Regular;
+	src: url("../fonts/OpenSans-Regular.ttf"), url("../fonts/OpenSans-Regular.woff"), url("../fonts/OpenSans-Regular.woff2");
+}
+
+.conteiner {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1920px;
+	margin-left: auto;
+    margin-right: auto;	
+}
+.header {
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+	padding-top: 45px;
+	padding-bottom: 110px;
+	background-image: url("../images/football_1920.jpg");
+	background-repeat: no-repeat;
+ 	position: relative;
+    background-position: center center;
+    background-size: cover;
+	
+   	
+}
+
+.header::after {
+	opacity: 0.9;
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;		
+}
+
+.top {
+	display: flex;
+	flex-direction: column;
+  	width: 1520px;
+ 	padding-left: 190px;
+  	padding-right: 190px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	justify-content: center;
+  	position: relative;
+  	z-index: 2;
+}
+ 	
+.surface_logo_text {
+	width: 191px;
+	height: 52px;
+	/*margin-bottom: 280px;*/
+	align-self: center;
+}
+
+.header-title {
+	
+	/*margin-bottom: 220px;*/
+	color: #ffffff;
+	font-family: Sans Open Bold;
+	text-transform: uppercase;
+	line-height: 30px;
+    text-align: center;
+    align-content: space-between;
+    font-size: 90px;
+}
+
+.button-group {
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	display: flex;
+	width: 310px;
+	height: 76px;
+	border-radius: 38px;
+	background-color: #5e42b0;
+}
+
+
+.botton-logo {
+	display: flex;
+	align-self: center;
+	width: 42px;
+	height: 50px;
+
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+	.conteiner {
+		width: 100%;
+	}
+	.header {
+		background-image: url("../images/football_1920.jpg")
+	}
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.header {
+		background-image: url("../images/football_1280.jpg");
+	}
+	
+}
+
+@media (max-width: 640px) {
+	.header {
+		background-image: url("../images/football_767.jpg");
+	}	
+
+	
+}
+
